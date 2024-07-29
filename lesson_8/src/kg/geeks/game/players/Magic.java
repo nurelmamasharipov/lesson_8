@@ -9,6 +9,9 @@ public class Magic extends Hero {
 
     @Override
     public void applySuperAbility(Boss boss, Hero[] heroes) {
-
+        int boost = RPG_Game.random.nextInt(5) + 2;
+        for(Hero hero : heroes) {
+            hero.setDamage(hero.getDamage() + boost);
+        }
     }
 }

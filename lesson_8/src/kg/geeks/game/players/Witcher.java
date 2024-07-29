@@ -5,7 +5,6 @@ public class Witcher extends Hero{
         super(health, damage, name, SuperAbility.RESURRECTION);
     }
 
-
     @Override
     public void applySuperAbility(Boss boss, Hero[] heroes) {
         for (Hero hero : heroes) {
